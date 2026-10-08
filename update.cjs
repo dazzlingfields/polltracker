@@ -1,3 +1,4 @@
+throw new Error('Legacy recovery script retired. Edit polls.json, run node build.cjs, then node checks.cjs.');
 const fs = require('fs');
 const path = require('path');
 const file = path.join(__dirname, 'index.html');

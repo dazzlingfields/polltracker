@@ -1,0 +1,15 @@
+const fs=require('fs'),path=require('path'),vm=require('vm'),crypto=require('crypto');
+const {validatePollSheet}=require('./poll-data.cjs');
+const filename=path.join(__dirname,'index.html');
+const data=validatePollSheet(JSON.parse(fs.readFileSync(path.join(__dirname,'polls.json'),'utf8')));
+let html=fs.readFileSync(filename,'utf8');
+const revision=crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex').slice(0,16);
+const constants='const CURRENT='+JSON.stringify(data.polls,null,2).replaceAll('<','\\u003c')+';\nconst PUBLISHED_ASOF='+JSON.stringify(data.asof)+';\nconst DATA_REVISION='+JSON.stringify(revision)+';';
+html=html.replace(/\/\* POLL_DATA_START \*\/[\s\S]*?\/\* POLL_DATA_END \*\//,()=> '/* POLL_DATA_START */\n'+constants+'\n/* POLL_DATA_END */');
+const parser=fs.readFileSync(path.join(__dirname,'poll-data.cjs'),'utf8').split("if(typeof module")[0];
+html=html.replace(/\/\* SHEET_PARSER_START \*\/[\s\S]*?\/\* SHEET_PARSER_END \*\//,()=> '/* SHEET_PARSER_START */\n'+parser+'\n/* SHEET_PARSER_END */');
+html=html.replace(/\/\* SHEET_UI_START \*\/[\s\S]*?\/\* SHEET_UI_END \*\//,()=> '/* SHEET_UI_START */\n'+fs.readFileSync(path.join(__dirname,'sheet-ui.js'),'utf8')+'\n/* SHEET_UI_END */');
+html=html.replace(/Source check: [^<]+? · Offline calculator · Manual updates/,'Published snapshot: '+data.asof+' · Editable poll sheet · Manual updates');
+new vm.Script(html.split('<script>')[1].split('</script>')[0]);
+fs.writeFileSync(filename,html);
+console.log('Built '+data.polls.length+' polls, snapshot '+data.asof+', revision '+revision);

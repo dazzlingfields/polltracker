@@ -19,13 +19,16 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: actions/configure-pages@v5
-      - name: Validate calculator
-        run: node checks.cjs
+      - name: Build published poll sheet and validate calculator
+        run: |
+          node build.cjs
+          node checks.cjs
       - name: Prepare public files
         run: |
           mkdir _site
           cp index.html _site/index.html
           cp parliament.svg _site/parliament.svg
+          cp polls.json _site/polls.json
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site

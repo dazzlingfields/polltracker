@@ -1,0 +1,177 @@
+{
+  "schema": 1,
+  "asof": "2026-10-08",
+  "polls": [
+    {
+      "house": "Curia",
+      "name": "Taxpayers’ Union–Curia",
+      "end": "2026-10-05",
+      "published": "2026-10-08",
+      "n": 1000,
+      "v": [
+        28.5,
+        28.2,
+        13.3,
+        9.2,
+        12,
+        1.4,
+        4.8
+      ],
+      "enabled": true,
+      "source": "https://www.taxpayers.org.nz/oct2026_nztucurpolljjhhfas",
+      "note": "1–5 Oct; 700 phone and 300 online; 960 decided voters. Original sponsor release checked 8 Oct. Other is a residual (2.6%), while the release reports rounded Other of 2.7%."
+    },
+    {
+      "house": "Verian",
+      "name": "1News–Verian",
+      "end": "2026-10-05",
+      "published": "2026-10-06",
+      "n": 1001,
+      "v": [
+        29,
+        28,
+        16,
+        9,
+        10,
+        0.6,
+        7
+      ],
+      "enabled": true,
+      "source": "https://www.1news.co.nz/2026/10/06/poll-opportunity-still-in-kingmaker-seat-as-greens-hold-strong/",
+      "note": "1–5 Oct; 501 mobile and 500 online. Main figures checked against 1News. TPM 0.6% from the linked polling table; the article rounds TPM to 1%. Other is the residual."
+    },
+    {
+      "house": "Roy Morgan",
+      "name": "Roy Morgan",
+      "end": "2026-09-27",
+      "published": "2026-10-06",
+      "n": 859,
+      "v": [
+        31,
+        23.5,
+        16,
+        11,
+        10,
+        2,
+        6.5
+      ],
+      "enabled": true,
+      "source": "https://www.roymorgan.com/findings/10351-nz-national-voting-intention-september-2026",
+      "note": "31 Aug–27 Sep; phone survey. Original pollster report checked 8 Oct. Decided party-vote shares; 5% did not name a party."
+    },
+    {
+      "house": "Reid Research",
+      "name": "RNZ–Reid Research",
+      "end": "2026-10-01",
+      "published": "2026-10-06",
+      "n": 1000,
+      "v": [
+        25.9,
+        30.8,
+        14.8,
+        9,
+        10.6,
+        2,
+        5.5
+      ],
+      "enabled": true,
+      "source": "https://thespinoff.co.nz/politics/06-10-2026/rnz-reid-research-poll-national-crashes-greens-surge-opportunity-kingmaker",
+      "note": "24 Sep–1 Oct; RNZ report syndicated by The Spinoff. Other is residual."
+    },
+    {
+      "house": "Verian",
+      "name": "1News–Verian",
+      "end": "2026-09-27",
+      "published": "2026-09-28",
+      "n": 1004,
+      "v": [
+        28,
+        28,
+        16,
+        11,
+        9,
+        1.2,
+        6
+      ],
+      "enabled": true,
+      "source": "https://www.1news.co.nz/2026/09/28/poll-greens-surge-to-best-result-ever-as-national-labour-slide-further/",
+      "note": "23–27 Sep. Major figures checked against 1News; TPM from polling table. Reported rounding is retained; Other is residual, not the reported 1%."
+    },
+    {
+      "house": "Freshwater",
+      "name": "The Post–Freshwater",
+      "end": "2026-09-11",
+      "published": null,
+      "n": 1011,
+      "v": [
+        27,
+        28,
+        14,
+        9,
+        13,
+        2,
+        6
+      ],
+      "enabled": true,
+      "source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_New_Zealand_general_election",
+      "note": "4–11 Sep. Secondary polling table; original article unavailable. Publication date not verified; filtering uses fieldwork end."
+    },
+    {
+      "house": "Anacta",
+      "name": "Anacta",
+      "end": "2026-09-10",
+      "published": null,
+      "n": 1701,
+      "v": [
+        30,
+        31,
+        12,
+        8,
+        10,
+        2,
+        7
+      ],
+      "enabled": true,
+      "source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_New_Zealand_general_election",
+      "note": "4–10 Sep. Secondary polling table; original article unavailable. Publication date not verified; filtering uses fieldwork end. Other is 0 residual, not a measured zero."
+    },
+    {
+      "house": "Curia",
+      "name": "Taxpayers’ Union–Curia",
+      "end": "2026-09-03",
+      "published": "2026-09-07",
+      "n": 1000,
+      "v": [
+        29,
+        25.9,
+        13.9,
+        10.5,
+        8.4,
+        2,
+        4.5
+      ],
+      "enabled": true,
+      "source": "https://www.taxpayers.org.nz/sept26_pollnztughjkuhn",
+      "note": "1–3 Sep. Sponsor release. Other is residual and may differ from the rounded reported total."
+    },
+    {
+      "house": "Roy Morgan",
+      "name": "Roy Morgan",
+      "end": "2026-08-23",
+      "published": "2026-08-31",
+      "n": 858,
+      "v": [
+        31,
+        24,
+        15.5,
+        10.5,
+        7.5,
+        1.5,
+        9.5
+      ],
+      "enabled": true,
+      "source": "https://www.roymorgan.com/findings/10321-nz-national-voting-intention-august-2026",
+      "note": "27 Jul–23 Aug. Excluded by the default 35-day cutoff."
+    }
+  ]
+}
