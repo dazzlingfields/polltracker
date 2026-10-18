@@ -28,12 +28,20 @@ The half-weight setting is an adjustable assumption, not a fitted quality score.
 
 Default electorate floors are one each for ACT and Te Pāti Māori. Sainte-Laguë allocation, the 5% list threshold, electorate exemption and overhang are included. Manual vote swings are added, negative shares clipped, and the complete vector normalised to 100%. Seat calculations are conditional on those assumptions, not probabilities of coalition agreements.
 
+## Electorate map
+
+The Electorate map tab shows an interactive schematic cartogram of all 72 electorates from 2023, with party shares and changes from the official final vote counts. `electorates.json` retains those counts as percentages plus electorate vote totals; `electorate-model.cjs` rakes historical geographic odds to the current polling scenario using fixed 2023 turnout weights. Updating polls, house weights or manual swings updates the map automatically. Run `node electorate-checks.cjs` to verify national calibration, historical recovery, zero-share cases and tile coverage.
+
+This initial geographic scenario uses historical boundaries, not the redrawn 2025 electorates, and estimates party votes rather than candidate wins. No demographic coefficients or calibrated local uncertainty are fitted. The on-site methodology specifies a future matched Census model and held-out validation; historical results alone do not identify demographic effects. Map leaders do not alter the assumed electorate floors in the Parliament allocation.
+
 ## Development and GitHub Pages
 
 Open `index.html` directly or run `node preview.cjs`. The built app is self-contained and uses no external JavaScript or APIs.
 
 After editing `polls.json`, run `node build.cjs`, then `node checks.cjs`. The builder embeds validated data, the shared parser and `sheet-ui.js` controls into `index.html`. Checks exercise weighting, dates, new polls, deduplication and MMP rules against retained fixtures, and generate the current `parliament.svg`. The CI workflow publishes only `index.html`, `parliament.svg`, and `polls.json`. Select **GitHub Actions** in repository **Settings → Pages**. All paths support the `/polltracker/` repository URL. [GitHub Pages workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 
-This recovered project has nine recent observations, rather than the later 38-poll archive mentioned in the previous chat. The original attachment remains in `archive/`. `update.cjs` is retired and must not regenerate this app.
+The current sheet has 11 recent observations, including the 1News–Verian release of 13 October and Anacta release of 16 October. The snapshot is current to 19 October 2026. Older observations stay in the sheet, but the 35-day fieldwork-age window excludes the September Freshwater poll. Roy Morgan retains its default half weight. See `updates/2026-10-19.md` for source checks.
+
+This recovered project does not contain the later 38-poll archive mentioned in the previous chat. The original attachment remains in `archive/`. `update.cjs` is retired and must not regenerate this app.
 
 Sources: [TPU–Curia](https://www.taxpayers.org.nz/oct2026_nztucurpolljjhhfas), [1News–Verian](https://www.1news.co.nz/2026/10/06/poll-opportunity-still-in-kingmaker-seat-as-greens-hold-strong/), [Roy Morgan](https://www.roymorgan.com/findings/10351-nz-national-voting-intention-september-2026). Each sheet row retains its source and methodology notes.

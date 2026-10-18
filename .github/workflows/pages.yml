@@ -23,6 +23,7 @@ jobs:
         run: |
           node build.cjs
           node checks.cjs
+          node electorate-checks.cjs
       - name: Prepare public files
         run: |
           mkdir _site

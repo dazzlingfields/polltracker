@@ -10,6 +10,7 @@ const CURRENT=JSON.parse(fs.readFileSync(path.join(__dirname,'tests/polls-fixtur
 const {validatePollSheet,canonicalHouse}=require('./poll-data.cjs');
 const sheet=validatePollSheet(JSON.parse(fs.readFileSync(path.join(__dirname,'polls.json'),'utf8')));
 assert.deepEqual(JSON.parse(JSON.stringify(published)),sheet.polls);
+assert.ok(html.includes('Published snapshot: '+sheet.asof+' · Editable poll sheet'));
 const snapshot=selectPolls(CURRENT,'2026-10-08',35,.5);
 assert.equal(snapshot.selected.length,6);
 assert.equal(snapshot.selected.find(r=>r.house==='Curia').published,'2026-10-08');

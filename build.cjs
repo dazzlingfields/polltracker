@@ -9,7 +9,10 @@ html=html.replace(/\/\* POLL_DATA_START \*\/[\s\S]*?\/\* POLL_DATA_END \*\//,()=
 const parser=fs.readFileSync(path.join(__dirname,'poll-data.cjs'),'utf8').split("if(typeof module")[0];
 html=html.replace(/\/\* SHEET_PARSER_START \*\/[\s\S]*?\/\* SHEET_PARSER_END \*\//,()=> '/* SHEET_PARSER_START */\n'+parser+'\n/* SHEET_PARSER_END */');
 html=html.replace(/\/\* SHEET_UI_START \*\/[\s\S]*?\/\* SHEET_UI_END \*\//,()=> '/* SHEET_UI_START */\n'+fs.readFileSync(path.join(__dirname,'sheet-ui.js'),'utf8')+'\n/* SHEET_UI_END */');
-html=html.replace(/Source check: [^<]+? · Offline calculator · Manual updates/,'Published snapshot: '+data.asof+' · Editable poll sheet · Manual updates');
+html=html.replace(/(?:Source check: [^<]+? · Offline calculator|Published snapshot: \d{4}-\d{2}-\d{2} · Editable poll sheet) · Manual updates/,'Published snapshot: '+data.asof+' · Editable poll sheet · Manual updates');
+const electorateData=JSON.parse(fs.readFileSync(path.join(__dirname,'electorates.json'),'utf8'));
+const electorateCode='const ELECTORATES='+JSON.stringify(electorateData.electorates).replaceAll('<','\\u003c')+';\n'+fs.readFileSync(path.join(__dirname,'electorate-model.cjs'),'utf8').split("if(typeof module")[0]+'\n'+fs.readFileSync(path.join(__dirname,'electorate-ui.js'),'utf8');
+html=html.replace(/\/\* ELECTORATE_START \*\/[\s\S]*?\/\* ELECTORATE_END \*\//,()=> '/* ELECTORATE_START */\n'+electorateCode+'\n/* ELECTORATE_END */');
 new vm.Script(html.split('<script>')[1].split('</script>')[0]);
 fs.writeFileSync(filename,html);
 console.log('Built '+data.polls.length+' polls, snapshot '+data.asof+', revision '+revision);

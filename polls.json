@@ -1,7 +1,30 @@
 {
   "schema": 1,
-  "asof": "2026-10-08",
+  "asof": "2026-10-19",
   "polls": [
+    {
+      "house": "Anacta",
+      "name": "The Post–Anacta",
+      "end": "2026-10-10",
+      "published": "2026-10-16",
+      "n": 1352,
+      "v": [28, 29, 15, 9, 10, 1.9, 5.4],
+      "enabled": true,
+      "source": "https://www.thepost.co.nz/nz-news/361100468/labour-and-national-below-30-labours-pollster-tells-corporate-clients",
+      "secondary_source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_New_Zealand_general_election",
+      "note": "6–10 Oct; corporate-client national online poll, released 16 Oct. Publication date, n, fieldwork and major-party figures checked in The Post/Herald reporting on 19 Oct. TPM 1.9% and Opportunity 5.4% cross-checked in the secondary polling table; the accessible Herald report rounds these to 2% and 5%. Other is the 1.7% residual, not an independently reported result."
+    },
+    {
+      "house": "Verian",
+      "name": "1News–Verian",
+      "end": "2026-10-12",
+      "published": "2026-10-13",
+      "n": 1007,
+      "v": [28, 28, 15, 10, 10, 0.4, 8],
+      "enabled": true,
+      "source": "https://www.1news.co.nz/2026/10/13/poll-hipkins-and-luxon-now-neck-and-neck-opportunity-on-track-for-10-mps/",
+      "note": "8–12 Oct; 501 mobile and 506 online respondents. All seven party-vote figures, sample, dates and publication checked against the original 1News report on 19 Oct. Undecided/refused voters excluded from party shares. Other is the 0.6% residual; source rounding is retained."
+    },
     {
       "house": "Curia",
       "name": "Taxpayers’ Union–Curia",
