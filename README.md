@@ -45,3 +45,9 @@ The current sheet has 11 recent observations, including the 1News–Verian relea
 This recovered project does not contain the later 38-poll archive mentioned in the previous chat. The original attachment remains in `archive/`. `update.cjs` is retired and must not regenerate this app.
 
 Sources: [TPU–Curia](https://www.taxpayers.org.nz/oct2026_nztucurpolljjhhfas), [1News–Verian](https://www.1news.co.nz/2026/10/06/poll-opportunity-still-in-kingmaker-seat-as-greens-hold-strong/), [Roy Morgan](https://www.roymorgan.com/findings/10351-nz-national-voting-intention-september-2026). Each sheet row retains its source and methodology notes.
+
+## 2 November 2026 update
+
+Added the latest 27 October 1News–Verian and 29 October RNZ–Reid Research releases, plus the 20 October Freshwater and earlier Verian observation. No newer national party-vote release was found in the checked sources. The Ipsos report covered by TVNZ on 2 November measures issue concerns and issue competence, so it is not included in party-vote averaging. TVNZ/1News/Verian are deduplicated as one house. The old 20 October Verian rounded values total 101.7%; reportedV preserves them and calculation shares are explicitly normalised.
+
+An overhang comparison tests National 30–44 electorates and TPM 1, 4 and 6, recomputing the majority for each Parliament. Independent seats are unaligned. No likelihood is assigned to electorate counts without calibrated electorate polling. Historical boundaries in the map remain a limitation.

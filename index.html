@@ -3,17 +3,17 @@
 <style>
 :root{color-scheme:light;--ink:#172b36;--muted:#536977;--paper:#f3f5f4;--line:#dce3e4;--accent:#006e65}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}header{background:#142d38;color:white;padding:32px max(20px,calc((100vw - 1180px)/2));border-bottom:5px solid #4eb7a3}.eyebrow{font-size:12px;letter-spacing:.13em;text-transform:uppercase;font-weight:750;color:#9fd6cd}h1{font-size:clamp(30px,5vw,45px);line-height:1.12;margin:10px 0}header p{max-width:740px;color:#d6e2e6;margin-bottom:5px}main{max-width:1220px;padding:22px 20px 60px;margin:auto}h2{font-size:23px;margin:0 0 12px}h3{font-size:17px;margin:0 0 10px}p{margin:8px 0 15px}nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}button,input,select{font:inherit}button{background:white;border:1px solid #b7c9cc;color:var(--ink);padding:10px 15px;border-radius:7px;cursor:pointer;font-weight:650}button:hover{border-color:var(--accent);background:#edf7f4}button.active,button.primary{background:var(--accent);color:white;border-color:var(--accent)}button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #d6a938;outline-offset:2px}.panel{background:white;border:1px solid var(--line);border-radius:12px;padding:22px;margin-bottom:20px}.small,small{font-size:12px;color:var(--muted)}.muted{color:var(--muted)}.controls{display:flex;gap:18px;align-items:end;flex-wrap:wrap}label{display:block;font-size:13px;font-weight:650}input,select{border:1px solid #b6c5cb;border-radius:5px;padding:7px;background:#fff;color:var(--ink);max-width:100%}label input,label select{display:block;margin-top:5px}input[type=number]{width:86px}input[type=date]{width:150px}input[type=checkbox]{width:19px;height:19px;accent-color:var(--accent)}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:20px 0}.metric{padding:17px;background:#eaf3f0;border-radius:8px}.metric strong{font-size:30px;display:block;font-variant-numeric:tabular-nums;line-height:1.2;margin:6px 0}.metric span{font-size:13px;color:var(--muted)}.notice{background:#fff5df;border-left:4px solid #c59a34;padding:12px 16px;margin:14px 0;font-size:13px}.info{background:#eef4f8;border-left-color:#4282a5}.error{background:#fcebed;color:#8d1725;border-left:4px solid #ba4150;padding:16px;margin-bottom:16px}table{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeric:tabular-nums}th,td{padding:10px 9px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}th{background:#f0f4f4;font-size:12px}th:first-child,td:first-child{text-align:left}td input{width:72px!important}td input[type=checkbox]{width:19px!important}td input[type=date]{width:139px!important}.wide-input{width:150px!important}.scroll{overflow-x:auto}td input.wide-input{width:150px!important}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px}.split{display:grid;grid-template-columns:1.1fr 1fr;gap:20px}.chart{width:100%;height:auto;display:block}a{color:#066e7b;text-decoration-thickness:1px;text-underline-offset:3px}.actions{display:flex;flex-wrap:wrap;gap:9px;margin:15px 0}.tag{font-size:11px;background:#edf4f1;padding:3px 6px;border-radius:5px}.hidden{display:none!important}summary{cursor:pointer;font-weight:650;padding:8px 0}details p,li{max-width:1000px}li{margin:7px 0}.formula{font-family:ui-monospace,monospace;background:#f2f5f5;padding:12px;overflow-x:auto;border-radius:5px}.subhead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.historybar{height:9px;border-radius:4px;background:#38918a;margin-top:5px}.source-list{padding-left:20px;overflow-wrap:anywhere}.source-list a{white-space:normal}#saved{min-height:18px}.testgood{color:#126553;font-weight:650}footer{color:var(--muted);font-size:12px;margin-top:25px}noscript{display:block;padding:25px;background:#fcebed}@media(max-width:700px){.metrics{grid-template-columns:1fr 1fr}.split{grid-template-columns:1fr}.panel{padding:16px}main{padding:16px 12px 40px}header{padding:25px 18px}.metric strong{font-size:25px}th,td{padding:9px 7px}}@media print{nav,.actions,.controls,#pollEditor,button{display:none!important}.hidden{display:block!important}.panel{break-inside:avoid}body{background:white}header{background:white;color:#142d38}header p{color:#43515a}}
 .projection-controls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:15px 0}.projection-controls input[type=range]{width:100%;padding:0}.projection-controls input[type=number]{width:90px}#sheetMessage{margin:12px 0;min-height:24px}#polls th{position:sticky;top:0}#polls .sheet-scroll{max-height:600px}.sheet-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}#quickPoll input,#quickPoll select{width:100%}.sheet-grid .source-field{grid-column:span 2}@media(max-width:700px){.projection-controls,.sheet-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media print{.projection-controls,#quickPoll{display:none!important}}</style></head><body>
-<header><div class="eyebrow">Aotearoa New Zealand · Election analysis</div><h1>NZ Poll Lab <span style="color:#83d0bd">2026</span></h1><p>Compare the polls with what actually happened. Update the numbers. Explore how past polling errors and MMP change the picture.</p><p class="small" style="color:#b9d0d6">Published snapshot: 2026-10-19 · Editable poll sheet · Manual updates</p></header>
+<header><div class="eyebrow">Aotearoa New Zealand · Election analysis</div><h1>NZ Poll Lab <span style="color:#83d0bd">2026</span></h1><p>Compare the polls with what actually happened. Update the numbers. Explore how past polling errors and MMP change the picture.</p><p class="small" style="color:#b9d0d6">Published snapshot: 2026-11-02 · Editable poll sheet · Manual updates</p></header>
 <noscript>This calculator needs JavaScript enabled. Open the downloaded HTML file in Chrome, Edge, Firefox or Safari.</noscript>
 <main><nav aria-label="Views"><button class="active" data-tab="model">2026 model</button><button data-tab="electorates">Electorate map</button><button data-tab="pollSheet">Poll sheet</button><button data-tab="history">Past accuracy</button><button data-tab="method">Method & sources</button></nav><div id="error" class="error hidden" role="alert"></div>
 <section id="model" class="view">
 <div class="panel"><h2>Your polling snapshot</h2><p class="muted">Start with the included polls or enter your own. The average uses the latest eligible poll per house. Roy Morgan starts at half weight; other houses start at full weight. Compare individual releases below to see how much the houses disagree.</p><div class="controls"><label>As-of date<input type="date" id="asof" value="2026-10-08"></label><label>Maximum fieldwork age, days<input type="number" id="windowDays" min="1" max="365" value="35"></label><label>Roy Morgan weight<select id="royWeight"><option value="0">Exclude · 0×</option><option value="0.25">Quarter weight · 0.25×</option><option value="0.5" selected>Half weight · 0.5×</option><option value="1">Equal weight · 1×</option></select></label><label>Historical bias adjustment<select id="bias"><option value="0">None · recommended baseline</option><option value="0.5">Half of past average error</option><option value="1">Full past average error</option></select></label><label>Display scenario<select id="scenario"><option value="base">Polling baseline</option><option value="2011">Repeat the 2011 average error</option><option value="2014">Repeat the 2014 average error</option><option value="2017">Repeat the 2017 average error</option><option value="2020">Repeat the 2020 average error</option><option value="2023">Repeat the 2023 average error</option></select></label></div>
 <p class="small">Roy Morgan’s September survey used telephone interviews over 31 Aug–27 Sep, while the other latest releases had shorter fieldwork periods. The 0.5× setting is an adjustable assumption, not a fitted measure of accuracy. <a href="https://www.roymorgan.com/findings/10351-nz-national-voting-intention-september-2026" target="_blank" rel="noopener">Methodology source</a>. Historical error replays retain their original equal-weight calibration.</p><div id="headline"></div><div id="cards" class="metrics"></div><div id="status" class="small"></div><div class="notice">These are seat scenarios if the entered vote shares occurred. Five past elections cannot establish reliable 2026 win probabilities. Campaign change beyond the observed polling errors is not modelled. The historical errors come from final polls, which are closer to voting day than many current inputs.</div></div>
 <div class="panel"><div class="subhead"><h2>Projected Parliament</h2><button id="seatSVG">Download seat graphic (SVG)</button></div><p class="small">One dot per seat, based on the polling average and your selected scenario. Electorate wins are assumptions; this is a seat projection, not a forecast of coalition agreements.</p><div id="parliament"></div><details><summary>Adjust vote swings and electorate assumptions</summary><p class="small">Move a slider to add or subtract percentage points from the polling average. Vote shares are then normalised to 100%. New polls, weighting changes, and these controls update every seat immediately.</p><div id="graphicControls" class="projection-controls"></div><div class="actions"><button id="graphicReset">Reset swings</button><button data-tpm="1">TPM: 1 electorate</button><button data-tpm="4">TPM: 4 electorates</button><button data-tab="pollSheet">Add or edit polls</button></div></details><p class="small" id="weightSensitivity"></p></div><div class="panel"><div class="subhead"><h2>Latest polls side by side</h2><button id="currentCSV">Download polls (CSV)</button></div><p class="small">One latest eligible poll per house. Seat totals use your electorate assumptions and the raw poll, before manual swings. Differences between pollsters are not necessarily changes in voter support.</p><div class="scroll" id="comparison"></div><div class="notice info" id="thresholdNote"></div></div>
-<div class="panel"><h2>Recent polling by party</h2><p class="small">Individual stored observations by fieldwork end. Lines connect observations within each house; they do not estimate a polling average. This recovered local copy contains recent releases, rather than the complete 2026 archive.</p><label>Party<select id="trendParty"></select></label><div id="trendChart"></div></div>
+<div class="panel"><h2>Recent polling by party</h2><p class="small">Individual stored observations by fieldwork end. Lines connect observations within each house; they do not estimate a polling average. Recent national releases through 2 November 2026. TVNZ / 1News and Verian are one series. The 20 October rounded Verian observation is normalised because its published shares exceed 100%; see poll notes.</p><label>Party<select id="trendParty"></select></label><div id="trendChart"></div></div>
 <div class="split"><div class="panel"><h2>Party vote</h2><p class="small">Solid bars: selected scenario. Thin line: minimum and maximum across five historical-error scenarios, including your manual swings. This is not a confidence interval.</p><div id="votechart"></div></div><div class="panel"><h2>Votes to seats</h2><div class="scroll" id="results"></div><p class="small">NAT + ACT + NZF and LAB + GRN + TPM are arithmetic groups, not predictions of coalition agreements. Opportunity and independent seats are separate.</p></div></div>
 <div class="panel"><h2>What if the polls miss again?</h2><p class="muted">Each row adds one election’s complete error pattern to today’s polling average. Party errors remain linked, so gains and losses are not independently mixed.</p><div class="scroll" id="scenarios"></div><p class="small">2011 and 2014 predate Opportunity: its share is held fixed in those rows before any clipping and normalisation. Its historical performance at roughly 1–3% may not transfer to a 2026 threshold contest. Test it separately below.</p></div>
-<div class="panel"><h2>Assumptions you can change</h2><p class="muted">Manual swings are percentage points added before normalising to 100%. Try Opportunity −1 pp to test the threshold. Electorate floors are scenario assumptions, not electorate forecasts.</p><div class="scroll" id="assumptions"></div><div class="controls" style="margin-top:15px"><label>Independent / unmodelled electorate-only seats<input type="number" id="independent" value="0" min="0" max="72"></label><button id="clearSwings">Clear manual swings</button><button id="tpm4">Try TPM with 4 electorates</button></div><p class="small">Defaults give ACT and TPM one electorate each, with zero floors for the other parties. Set actual expected wins when testing overhang. An independent seat reduces the 120-seat party allocation pool by one. “Other” is excluded from list allocation even when its combined share exceeds 5%, because it represents multiple parties. A minor party inside Other winning list seats is outside this model.</p></div>
+<div class="panel"><h2>Electorate results and overhang</h2><p>Overhang arises when a party wins more electorates than its proportional entitlement. Extra seats increase Parliament and the majority required. National as well as TPM may create overhang. These are conditional seat scenarios, not electorate forecasts.</p><div id="overhangTable" class="scroll"></div><p class="small">Compare National on 30–44 electorate wins and TPM on 1, 4 or 6. ACT is held at one; all other parties at zero in this comparison. Independent/unregistered-party seats use the separate control and are subtracted before proportional allocation, following the Electoral Commission. They are shown unaligned, with no assumed coalition support.</p><p><a href="https://dr.electionresults.govt.nz/electionresults_2023/statistics/sainte-lague-formula.html" target="_blank" rel="noopener">Electoral Commission allocation rules</a></p><p class="muted">Manual swings are percentage points added before normalising to 100%. Try Opportunity −1 pp to test the threshold. Electorate floors are scenario assumptions, not electorate forecasts.</p><div class="scroll" id="assumptions"></div><div class="controls" style="margin-top:15px"><label>Independent / unmodelled electorate-only seats<input type="number" id="independent" value="0" min="0" max="72"></label><button id="clearSwings">Clear manual swings</button><button id="tpm4">Try TPM with 4 electorates</button></div><p class="small">Defaults give ACT and TPM one electorate each, with zero floors for the other parties. Set actual expected wins when testing overhang. An independent seat reduces the 120-seat party allocation pool by one. “Other” is excluded from list allocation even when its combined share exceeds 5%, because it represents multiple parties. A minor party inside Other winning list seats is outside this model.</p></div>
 </section><section id="pollSheet" class="view hidden"><div class="panel" id="pollEditor"><div class="subhead"><h2>Update the polling inputs</h2><button id="addPoll" class="primary">+ Add a poll</button></div><p class="muted">Use decided party-vote percentages, such as 28.5, not 0.285. Enter the fieldwork end date and keep the same pollster key when adding that firm’s next poll. Other is calculated as the residual to 100%.</p><form id="quickPoll" class="panel hidden"><h3>Add a national party-vote poll</h3><div class="sheet-grid"><label>Polling house<select id="newHouse"><option>Verian</option><option>Curia</option><option>Reid Research</option><option>Roy Morgan</option><option>Freshwater</option><option>Anacta</option></select></label><label>Fieldwork end<input id="newEnd" type="date" required></label><label>Release date<input id="newReleased" type="date" required></label><label>Sample size<input id="newSample" type="number" min="1" step="1"></label><div id="newShares" class="sheet-grid" style="grid-column:1/-1"></div><label class="source-field">Report link<input id="newSource" type="url" placeholder="https://..." required></label><label class="source-field">Note<input id="newNote" type="text" placeholder="Fieldwork period or methodology"></label></div><p class="small">Enter decided party-vote percentages. Other is calculated. Keep electorate-only polls out of this national average.</p><button class="primary" type="submit">Add poll and update projection</button></form><div class="actions"><button id="downloadSheet" class="primary">Download poll sheet</button><button id="loadSheet">Import poll sheet</button><button id="loadPublished">Use published polls</button><a href="https://github.com/dazzlingfields/polltracker/edit/main/polls.json" target="_blank" rel="noopener">Update the shared sheet on GitHub</a><input type="file" id="sheetFile" accept=".json,application/json" class="hidden"></div><p class="small">Edits update your projection immediately and save in this browser. To update the shared site, download the sheet, replace <b>polls.json</b> in the GitHub editor with its contents, and commit. GitHub rebuilds the site and graphic automatically. Import adds new rows and replaces matching house/date rows after confirmation; your settings stay intact.</p><div id="sheetMessage" aria-live="polite"></div><div class="scroll" id="polls"></div><div class="actions"><button id="export">Export your inputs</button><button id="importButton">Import inputs</button><button id="historyCSV">Download historical data (CSV)</button><button id="reset">Restore starting data</button><input id="importFile" type="file" accept=".json,application/json" class="hidden"></div><div class="small" id="saved" aria-live="polite"></div><p class="small">Changes are saved in this browser when local storage is available. Export a JSON backup to keep your edits when moving the HTML file or switching device. Polls do not refresh automatically.</p><details><summary>Poll source notes and coverage</summary><div id="pollNotes"></div><p class="small">This is a curated starting set, not a guaranteed exhaustive feed. Freshwater and Anacta figures use a secondary polling table because their original reports were inaccessible. Their publication dates were not verified; these two rows are filtered by fieldwork end only. Previous releases are retained for comparison; the newest eligible release per polling house enters the average. Other absorbs rounding and unreported parties; it is not always the source’s reported Other value.</p></details></div>
 </section>
 <section id="history" class="view hidden"><div class="panel"><h2>How accurate were the final polls?</h2><p>Comparison: the last available poll from each of three long-running series before each election, across National, Labour, Green, ACT, NZ First and Māori / Te Pāti Māori. That is 15 polls, 90 party-poll comparisons and only five election cycles.</p><div class="metrics" id="historyCards"></div><div class="scroll" id="yearAccuracy"></div><p class="small">MAE is mean absolute error in percentage points. It is not “percentage accuracy”. Six common parties keep the comparison consistent across years. Opportunity is included separately where it existed, but excluded from headline accuracy scores. Poll fieldwork periods differ.</p></div>
@@ -261,10 +261,95 @@ const CURRENT=[
     "enabled": true,
     "source": "https://www.roymorgan.com/findings/10321-nz-national-voting-intention-august-2026",
     "note": "27 Jul–23 Aug. Excluded by the default 35-day cutoff."
+  },
+  {
+    "house": "Verian",
+    "name": "Verian",
+    "end": "2026-10-25",
+    "published": "2026-10-27",
+    "n": 1000,
+    "v": [
+      28.9,
+      27.3,
+      14.8,
+      12.4,
+      10,
+      0.1,
+      6.3
+    ],
+    "enabled": true,
+    "source": "https://www.1news.co.nz/2026/10/27/poll-coalition-has-path-to-power-but-labour-steady-amid-gangs-row/",
+    "note": "21–25 Oct. Exact decimal shares from the national polling table; 1News article rounds major parties to whole percentages. Do not add TVNZ as a separate house."
+  },
+  {
+    "house": "Reid Research",
+    "name": "Reid Research",
+    "end": "2026-10-26",
+    "published": "2026-10-29",
+    "n": 1000,
+    "v": [
+      24.8,
+      30.6,
+      14.5,
+      10.1,
+      9.9,
+      1.9,
+      7.2
+    ],
+    "enabled": true,
+    "source": "https://www.odt.co.nz/news/national/national-dips-below-disastrous-2020-result-as-opportunity-surges-in-latest-poll-j7ac6t0v",
+    "note": "20–26 Oct; online panel. RNZ report syndicated by ODT, dated 28 October and updated 29 October; conservatively available from 29 October."
+  },
+  {
+    "house": "Freshwater",
+    "name": "Freshwater",
+    "end": "2026-10-19",
+    "published": "2026-10-20",
+    "n": 1458,
+    "v": [
+      27.6,
+      28.7,
+      14.3,
+      9,
+      11.8,
+      2,
+      5.4
+    ],
+    "enabled": true,
+    "source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_New_Zealand_general_election",
+    "note": "9–19 Oct. Secondary table checked against independent poll trackers; original Post report not independently accessible."
+  },
+  {
+    "house": "Verian",
+    "name": "1News–Verian",
+    "end": "2026-10-19",
+    "published": "2026-10-20",
+    "n": 1003,
+    "v": [
+      31.465093411996065,
+      26.548672566371682,
+      15.732546705998033,
+      10.816125860373647,
+      7.866273352999016,
+      0.688298918387414,
+      6.882989183874139
+    ],
+    "reportedV": [
+      32,
+      27,
+      16,
+      11,
+      8,
+      0.7,
+      7
+    ],
+    "enabled": true,
+    "source": "https://www.1news.co.nz/2026/10/20/poll-national-jumps-leaving-labours-position-perilous/",
+    "note": "15–19 Oct. Published rounded shares total 101.7%; reportedV retains the original figures. Stored calculation shares are proportionally normalised to 100% with zero residual. This affects only an older historical observation, not the latest-house average."
   }
 ];
-const PUBLISHED_ASOF="2026-10-19";
-const DATA_REVISION="aaaf822c79c15f34";
+const PUBLISHED_ASOF="2026-11-02";
+const DATA_REVISION="20c80a41ca627df6";
 /* POLL_DATA_END */
 /* SHEET_PARSER_START */
 // Shared validation for the published poll sheet and browser imports.
@@ -423,8 +508,17 @@ function update(){
   const row=(label,ss,vv)=>[label,fmt(vv[6]),ss.right,ss.left,ss.opp,ss.independent,ss.majority,ss.total,ss.right>=ss.majority?'NAT + ACT + NZF':ss.left>=ss.majority?'LAB + GRN + TPM':'Neither group'];
   $('#scenarios').innerHTML=table(['Scenario','OPP %','NAT+ACT+NZF','LAB+GRN+TPM','OPP seats','Ind.','Majority','Total','Majority group'],[row('Baseline'+(state.bias?' with correction':''),seats(centre,state.floors,state.independent),centre),...variants.map(r=>row(`${r.year} error`,r.seats,r.v))]);
   selected.status.forEach((x,i)=>{$('#rowstatus-'+i).textContent=x;$('#other-'+i).textContent=fmt(100-sum(state.rows[i].v),1);});
-  lastOutput={raw,v,seats:s,variants};document.querySelectorAll('[data-swing]').forEach(el=>el.value=state.swings[+el.dataset.swing]);renderComparison(selected);renderTrend();renderParliament();renderElectorates();save();
- }catch(e){$('#error').textContent=e.message;$('#error').classList.remove('hidden');$('#headline').innerHTML='';$('#cards').innerHTML='';$('#results').innerHTML='';$('#votechart').innerHTML='';$('#scenarios').innerHTML='';$('#status').textContent='Results unavailable until the input error is corrected.';lastOutput=null;$('#parliament').innerHTML='';$('#comparison').innerHTML='';$('#thresholdNote').textContent='';$('#trendChart').innerHTML='';}
+  lastOutput={raw,v,seats:s,variants};document.querySelectorAll('[data-swing]').forEach(el=>el.value=state.swings[+el.dataset.swing]);renderComparison(selected);renderTrend();renderParliament();renderElectorates();renderOverhang();save();
+ }catch(e){$('#error').textContent=e.message;$('#error').classList.remove('hidden');$('#headline').innerHTML='';$('#cards').innerHTML='';$('#results').innerHTML='';$('#votechart').innerHTML='';$('#scenarios').innerHTML='';$('#status').textContent='Results unavailable until the input error is corrected.';lastOutput=null;$('#overhangTable').innerHTML='';$('#parliament').innerHTML='';$('#comparison').innerHTML='';$('#thresholdNote').textContent='';$('#trendChart').innerHTML='';}
+}
+function renderOverhang(){
+ if(!lastOutput)return;
+ const v=lastOutput.v,rows=[];
+ for(const nat of [30,34,36,38,40,42,44])for(const tpm of [1,4,6]){
+  const ss=seats(v,[nat,0,0,1,0,tpm,0],state.independent);
+  rows.push([nat,tpm,ss.overhang,ss.total,ss.majority,ss.right,ss.left,ss.opp,ss.right>=ss.majority?'Right majority':ss.left>=ss.majority?'Left majority':ss.left+ss.opp>=ss.majority?'Left + Opportunity majority':'Neither displayed combination']);
+ }
+ $('#overhangTable').innerHTML=table(['NAT electorates','TPM electorates','Overhang','Parliament','Majority','NAT+ACT+NZF','LAB+GRN+TPM','Opportunity','Seat arithmetic'],rows);
 }
 function parliamentSVG(ss){
  const order=[1,2,5,6,0,3,4], dots=order.flatMap(p=>Array(ss.parties[p]).fill(p)).concat(Array(ss.independent).fill(7));

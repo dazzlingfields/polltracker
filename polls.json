@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "asof": "2026-10-19",
+  "asof": "2026-11-02",
   "polls": [
     {
       "house": "Anacta",
@@ -8,7 +8,15 @@
       "end": "2026-10-10",
       "published": "2026-10-16",
       "n": 1352,
-      "v": [28, 29, 15, 9, 10, 1.9, 5.4],
+      "v": [
+        28,
+        29,
+        15,
+        9,
+        10,
+        1.9,
+        5.4
+      ],
       "enabled": true,
       "source": "https://www.thepost.co.nz/nz-news/361100468/labour-and-national-below-30-labours-pollster-tells-corporate-clients",
       "secondary_source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_New_Zealand_general_election",
@@ -20,7 +28,15 @@
       "end": "2026-10-12",
       "published": "2026-10-13",
       "n": 1007,
-      "v": [28, 28, 15, 10, 10, 0.4, 8],
+      "v": [
+        28,
+        28,
+        15,
+        10,
+        10,
+        0.4,
+        8
+      ],
       "enabled": true,
       "source": "https://www.1news.co.nz/2026/10/13/poll-hipkins-and-luxon-now-neck-and-neck-opportunity-on-track-for-10-mps/",
       "note": "8–12 Oct; 501 mobile and 506 online respondents. All seven party-vote figures, sample, dates and publication checked against the original 1News report on 19 Oct. Undecided/refused voters excluded from party shares. Other is the 0.6% residual; source rounding is retained."
@@ -195,6 +211,91 @@
       "enabled": true,
       "source": "https://www.roymorgan.com/findings/10321-nz-national-voting-intention-august-2026",
       "note": "27 Jul–23 Aug. Excluded by the default 35-day cutoff."
+    },
+    {
+      "house": "Verian",
+      "name": "Verian",
+      "end": "2026-10-25",
+      "published": "2026-10-27",
+      "n": 1000,
+      "v": [
+        28.9,
+        27.3,
+        14.8,
+        12.4,
+        10,
+        0.1,
+        6.3
+      ],
+      "enabled": true,
+      "source": "https://www.1news.co.nz/2026/10/27/poll-coalition-has-path-to-power-but-labour-steady-amid-gangs-row/",
+      "note": "21–25 Oct. Exact decimal shares from the national polling table; 1News article rounds major parties to whole percentages. Do not add TVNZ as a separate house."
+    },
+    {
+      "house": "Reid Research",
+      "name": "Reid Research",
+      "end": "2026-10-26",
+      "published": "2026-10-29",
+      "n": 1000,
+      "v": [
+        24.8,
+        30.6,
+        14.5,
+        10.1,
+        9.9,
+        1.9,
+        7.2
+      ],
+      "enabled": true,
+      "source": "https://www.odt.co.nz/news/national/national-dips-below-disastrous-2020-result-as-opportunity-surges-in-latest-poll-j7ac6t0v",
+      "note": "20–26 Oct; online panel. RNZ report syndicated by ODT, dated 28 October and updated 29 October; conservatively available from 29 October."
+    },
+    {
+      "house": "Freshwater",
+      "name": "Freshwater",
+      "end": "2026-10-19",
+      "published": "2026-10-20",
+      "n": 1458,
+      "v": [
+        27.6,
+        28.7,
+        14.3,
+        9,
+        11.8,
+        2,
+        5.4
+      ],
+      "enabled": true,
+      "source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_New_Zealand_general_election",
+      "note": "9–19 Oct. Secondary table checked against independent poll trackers; original Post report not independently accessible."
+    },
+    {
+      "house": "Verian",
+      "name": "1News–Verian",
+      "end": "2026-10-19",
+      "published": "2026-10-20",
+      "n": 1003,
+      "v": [
+        31.465093411996065,
+        26.548672566371682,
+        15.732546705998033,
+        10.816125860373647,
+        7.866273352999016,
+        0.688298918387414,
+        6.882989183874139
+      ],
+      "reportedV": [
+        32,
+        27,
+        16,
+        11,
+        8,
+        0.7,
+        7
+      ],
+      "enabled": true,
+      "source": "https://www.1news.co.nz/2026/10/20/poll-national-jumps-leaving-labours-position-perilous/",
+      "note": "15–19 Oct. Published rounded shares total 101.7%; reportedV retains the original figures. Stored calculation shares are proportionally normalised to 100% with zero residual. This affects only an older historical observation, not the latest-house average."
     }
   ]
 }
