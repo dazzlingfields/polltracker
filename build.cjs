@@ -13,6 +13,7 @@ html=html.replace(/(?:Source check: [^<]+? · Offline calculator|Published snaps
 const electorateData=JSON.parse(fs.readFileSync(path.join(__dirname,'electorates.json'),'utf8'));
 const electorateCode='const ELECTORATES='+JSON.stringify(electorateData.electorates).replaceAll('<','\\u003c')+';\n'+fs.readFileSync(path.join(__dirname,'electorate-model.cjs'),'utf8').split("if(typeof module")[0]+'\n'+fs.readFileSync(path.join(__dirname,'electorate-ui.js'),'utf8');
 html=html.replace(/\/\* ELECTORATE_START \*\/[\s\S]*?\/\* ELECTORATE_END \*\//,()=> '/* ELECTORATE_START */\n'+electorateCode+'\n/* ELECTORATE_END */');
+html=html.replace(/\/\* ODDS_START \*\/[\s\S]*?\/\* ODDS_END \*\//,()=> '/* ODDS_START */\n'+fs.readFileSync(path.join(__dirname,'odds-model.js'),'utf8')+'\n'+fs.readFileSync(path.join(__dirname,'odds-ui.js'),'utf8')+'\n/* ODDS_END */');
 new vm.Script(html.split('<script>')[1].split('</script>')[0]);
 fs.writeFileSync(filename,html);
 console.log('Built '+data.polls.length+' polls, snapshot '+data.asof+', revision '+revision);

@@ -51,3 +51,9 @@ Sources: [TPU–Curia](https://www.taxpayers.org.nz/oct2026_nztucurpolljjhhfas),
 Added the latest 27 October 1News–Verian and 29 October RNZ–Reid Research releases, plus the 20 October Freshwater and earlier Verian observation. No newer national party-vote release was found in the checked sources. The Ipsos report covered by TVNZ on 2 November measures issue concerns and issue competence, so it is not included in party-vote averaging. TVNZ/1News/Verian are deduplicated as one house. The old 20 October Verian rounded values total 101.7%; reportedV preserves them and calculation shares are explicitly normalised.
 
 An overhang comparison tests National 30–44 electorates and TPM 1, 4 and 6, recomputing the majority for each Parliament. Independent seats are unaligned. No likelihood is assigned to electorate counts without calibrated electorate polling. Historical boundaries in the map remain a limitation.
+
+## Conditional odds with overhang
+
+The odds panel simulates National electorate counts around 38 (triangular base range 32–44) and TPM around four (range 1–6). A displayed, adjustable link shifts National electorate counts with simulated national party vote; it is not fitted. Default TPM list availability is zero, conditional on Rawiri Waititi winning Waiariki. This is separate from the fixed electorate assumptions in the main seat graphic. The panel also compares fixed National counts and no National overhang. Distributions and polling error jitter are judgement-based and are not calibrated probabilities of electorate wins or coalition agreements. Te Tai Tokerau Party is not separately modelled.
+
+Run `node odds-checks.cjs` to verify the simulation, zero-error seat arithmetic, list exhaustion, reproducibility and embedded UI startup. Source and assumptions are shown in the panel. The original fixed-floor projections remain available for comparison.
