@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "asof": "2026-11-02",
+  "asof": "2026-11-03",
   "polls": [
     {
       "house": "Anacta",
@@ -296,6 +296,25 @@
       "enabled": true,
       "source": "https://www.1news.co.nz/2026/10/20/poll-national-jumps-leaving-labours-position-perilous/",
       "note": "15–19 Oct. Published rounded shares total 101.7%; reportedV retains the original figures. Stored calculation shares are proportionally normalised to 100% with zero residual. This affects only an older historical observation, not the latest-house average."
+    },
+    {
+      "house": "Verian",
+      "name": "1News–Verian",
+      "end": "2026-11-02",
+      "published": "2026-11-03",
+      "n": 1006,
+      "v": [
+        29.5,
+        28.8,
+        16.4,
+        10,
+        8.4,
+        0.4,
+        6.2
+      ],
+      "enabled": true,
+      "source": "https://www.1news.co.nz/2026/11/03/final-poll-election-set-to-go-down-to-wire-as-nationals-partners-slip/",
+      "note": "29 Oct–2 Nov; released 3 Nov. 500 mobile and 506 online-panel interviews. Exact one-decimal decided party-vote shares from the original 1News report, not rounded headline figures. Undecided, non-voters and refused excluded. Maximum sampling error ±3.1 percentage points. Other is the 0.3% residual."
     }
   ]
 }
