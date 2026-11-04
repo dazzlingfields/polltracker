@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "asof": "2026-11-03",
+  "asof": "2026-11-04",
   "polls": [
     {
       "house": "Anacta",
@@ -315,6 +315,25 @@
       "enabled": true,
       "source": "https://www.1news.co.nz/2026/11/03/final-poll-election-set-to-go-down-to-wire-as-nationals-partners-slip/",
       "note": "29 Oct–2 Nov; released 3 Nov. 500 mobile and 506 online-panel interviews. Exact one-decimal decided party-vote shares from the original 1News report, not rounded headline figures. Undecided, non-voters and refused excluded. Maximum sampling error ±3.1 percentage points. Other is the 0.3% residual."
+    },
+    {
+      "house": "Curia",
+      "name": "Taxpayers’ Union–Curia",
+      "end": "2026-11-03",
+      "published": "2026-11-04",
+      "n": 1000,
+      "v": [
+        28.9,
+        28.4,
+        14.4,
+        10.5,
+        9.8,
+        1.1,
+        5.8
+      ],
+      "enabled": true,
+      "source": "https://www.taxpayers.org.nz/new_poll_hung_parliament_as_only_half_a_percent_separates_national_and_labour_net_country_direction_jumps_to_19_month_high",
+      "note": "28 Oct–3 Nov; n = 1,000; released 4 Nov. Official fieldwork dates and sample size supplied by the user. All seven party-vote shares checked against the original Taxpayers’ Union media release. Detailed methodology report was not accessible; interview mode, weighting and undecided base are not recorded here. Other is the 1.1% residual from the published shares. No normalisation applied."
     }
   ]
 }
