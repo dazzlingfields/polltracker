@@ -332,8 +332,27 @@
         5.8
       ],
       "enabled": true,
-      "source": "https://www.taxpayers.org.nz/new_poll_hung_parliament_as_only_half_a_percent_separates_national_and_labour_net_country_direction_jumps_to_19_month_high",
-      "note": "28 Oct–3 Nov; n = 1,000; released 4 Nov. Official fieldwork dates and sample size supplied by the user. All seven party-vote shares checked against the original Taxpayers’ Union media release. Detailed methodology report was not accessible; interview mode, weighting and undecided base are not recorded here. Other is the 1.1% residual from the published shares. No normalisation applied."
+      "source": "https://www.taxpayers.org.nz/2026nov_nztucur_pollhhatdst",
+      "note": "28 Oct–3 Nov; released 4 Nov. Original commissioner report now independently accessible and checked: n = 1,000 (700 phone landline/mobile, 300 online panel); 934 decided voters, 35 undecided (3.5%) and 31 refused (3.1%). Weighted by gender, age and area to the voting adult population; unlikely voters excluded. Median response 1 Nov; maximum sampling error ±3.1 pp. All seven party shares retained without normalisation. Reported Other and residual both 1.1%. This verifies the official dates/sample supplied earlier by the user."
+    },
+    {
+      "house": "Roy Morgan",
+      "name": "Roy Morgan",
+      "end": "2026-10-25",
+      "published": "2026-11-04",
+      "n": 859,
+      "v": [
+        26.5,
+        27.5,
+        15.5,
+        11,
+        10,
+        1,
+        8
+      ],
+      "enabled": true,
+      "source": "https://www.roymorgan.com/findings/10381-nz-national-voting-intention-october-2026",
+      "note": "28 Sep–25 Oct; released 4 Nov. National telephone survey (landline and mobile), n = 859 electors; 4% did not name a party. Seven decided party shares verified against the original report and party table. Other is the 0.5% residual. The report contains an inconsistent prose sentence about total minor-party support; the explicit 8% Opportunity result and party figures are retained. Roy Morgan keeps the existing default 0.5 house weight; no electorate assumptions are imported from its published seat projection."
     }
   ]
 }
