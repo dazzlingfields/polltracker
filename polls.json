@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "asof": "2026-11-04",
+  "asof": "2026-11-06",
   "polls": [
     {
       "house": "Anacta",
@@ -353,6 +353,26 @@
       "enabled": true,
       "source": "https://www.roymorgan.com/findings/10381-nz-national-voting-intention-october-2026",
       "note": "28 Sep–25 Oct; released 4 Nov. National telephone survey (landline and mobile), n = 859 electors; 4% did not name a party. Seven decided party shares verified against the original report and party table. Other is the 0.5% residual. The report contains an inconsistent prose sentence about total minor-party support; the explicit 8% Opportunity result and party figures are retained. Roy Morgan keeps the existing default 0.5 house weight; no electorate assumptions are imported from its published seat projection."
+    },
+    {
+      "house": "Freshwater",
+      "name": "The Post–Freshwater",
+      "end": "2026-11-03",
+      "published": "2026-11-06",
+      "n": 1044,
+      "v": [
+        26.4,
+        30.7,
+        13,
+        9.8,
+        12,
+        2,
+        5.1
+      ],
+      "enabled": true,
+      "source": "https://www.thepost.co.nz/politics/361111442/election-eve-cliffhanger-one-sleep-go-labour-nudges-ahead",
+      "secondary_source": "https://thespinoff.co.nz/politics/06-11-2026/four-final-polls-and-the-tiny-margins-that-could-decide-the-result",
+      "note": "29 Oct–3 Nov; released 6 Nov. Seven national party-vote shares and fieldwork dates checked in The Spinoff reporting of the final Post/Freshwater poll. User confirmed these dates and sample n = 1,044 on 6 Nov. Original publisher report was not independently accessible; interview mode and weighting methodology remain unverified. Published party shares retained without normalisation. Other is the 1.0% residual, not an independently reported figure."
     }
   ]
 }
